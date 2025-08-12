@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "filters": {
+    "categories": [
+      "Technology",
+      "Business", 
+      "Politics",
+      "Sports",
+      "Health",
+      "Science"
+    ],
+    "sources": [
+      "TechCrunch",
+      "Reuters",
+      "BBC News",
+      "ESPN",
+      "Nature Medicine",
+      "NASA News"
+    ],
+    "authors": [
+      "Sarah Johnson",
+      "Michael Brown",
+      "Emily Davis",
+      "Robert Wilson",
+      "Jennifer Garcia",
+      "David Martinez"
+    ]
+  }
+}

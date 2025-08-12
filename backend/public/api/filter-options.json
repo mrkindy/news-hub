@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "data": {
+    "categories": [
+      { "id": "technology", "name": "Technology", "slug": "technology", "count": 156 },
+      { "id": "sports", "name": "Sports", "slug": "sports", "count": 134 },
+      { "id": "politics", "name": "Politics", "slug": "politics", "count": 112 },
+      { "id": "entertainment", "name": "Entertainment", "slug": "entertainment", "count": 98 },
+      { "id": "health", "name": "Health", "slug": "health", "count": 87 },
+      { "id": "science", "name": "Science", "slug": "science", "count": 76 },
+      { "id": "business", "name": "Business", "slug": "business", "count": 65 },
+      { "id": "world", "name": "World", "slug": "world", "count": 54 },
+      { "id": "lifestyle", "name": "Lifestyle", "slug": "lifestyle", "count": 43 },
+      { "id": "travel", "name": "Travel", "slug": "travel", "count": 32 }
+    ],
+    "sources": [
+      { "id": "bbc", "name": "BBC News", "slug": "bbc", "count": 234 },
+      { "id": "cnn", "name": "CNN", "slug": "cnn", "count": 198 },
+      { "id": "reuters", "name": "Reuters", "slug": "reuters", "count": 176 },
+      { "id": "associated-press", "name": "Associated Press", "slug": "associated-press", "count": 165 },
+      { "id": "guardian", "name": "The Guardian", "slug": "guardian", "count": 143 },
+      { "id": "nytimes", "name": "New York Times", "slug": "nytimes", "count": 132 },
+      { "id": "washington-post", "name": "Washington Post", "slug": "washington-post", "count": 121 },
+      { "id": "techcrunch", "name": "TechCrunch", "slug": "techcrunch", "count": 109 },
+      { "id": "espn", "name": "ESPN", "slug": "espn", "count": 98 },
+      { "id": "bloomberg", "name": "Bloomberg", "slug": "bloomberg", "count": 87 }
+    ],
+    "authors": [
+      { "id": "john-doe", "name": "John Doe", "slug": "john-doe", "count": 45 },
+      { "id": "jane-smith", "name": "Jane Smith", "slug": "jane-smith", "count": 42 },
+      { "id": "michael-brown", "name": "Michael Brown", "slug": "michael-brown", "count": 38 },
+      { "id": "sarah-wilson", "name": "Sarah Wilson", "slug": "sarah-wilson", "count": 35 },
+      { "id": "david-johnson", "name": "David Johnson", "slug": "david-johnson", "count": 32 },
+      { "id": "emily-davis", "name": "Emily Davis", "slug": "emily-davis", "count": 29 },
+      { "id": "robert-taylor", "name": "Robert Taylor", "slug": "robert-taylor", "count": 26 },
+      { "id": "lisa-anderson", "name": "Lisa Anderson", "slug": "lisa-anderson", "count": 23 },
+      { "id": "chris-martinez", "name": "Chris Martinez", "slug": "chris-martinez", "count": 20 },
+      { "id": "amanda-garcia", "name": "Amanda Garcia", "slug": "amanda-garcia", "count": 18 }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "user": {
+    "id": "user_123",
+    "email": "demo@example.com",
+    "first_name": "Demo",
+    "last_name": "User",
+    "preferences": {
+      "categories": [
+        { "id": 1, "slug": "technology", "name": "Technology" },
+        { "id": 2, "slug": "business", "name": "Business" }
+      ],
+      "sources": [
+        { "id": 1, "slug": "techcrunch", "name": "TechCrunch" },
+        { "id": 2, "slug": "reuters", "name": "Reuters" }
+      ],
+      "authors": [
+        { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" }
+      ],
+      "language": "en",
+      "theme": "light"
+    },
+    "createdAt": "2024-12-27T10:00:00Z",
+    "token": "mock_jwt_token_12345"
+  }
+}

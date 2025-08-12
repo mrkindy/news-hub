@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "user": {
+    "id": "user_new_456",
+    "email": "newuser@example.com",
+    "first_name": "New",
+    "last_name": "User",
+    "preferences": {
+      "categories": [],
+      "sources": [],
+      "authors": [],
+      "language": "en",
+      "theme": "light"
+    },
+    "createdAt": "2024-12-27T12:00:00Z"
+  },
+  "token": "mock_jwt_token_new_67890"
+}

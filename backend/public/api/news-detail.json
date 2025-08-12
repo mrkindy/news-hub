@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "article": {
+    "id": "1",
+    "title": "Revolutionary AI Technology Transforms Healthcare Industry",
+    "description": "Groundbreaking artificial intelligence solutions are revolutionizing patient care and medical diagnosis.",
+    "content": "The healthcare industry is experiencing a profound transformation through the integration of artificial intelligence technologies. These cutting-edge solutions are enabling healthcare providers to deliver more accurate diagnoses, personalized treatment plans, and improved patient outcomes. From machine learning algorithms that can detect early signs of disease in medical imaging to natural language processing systems that streamline clinical documentation, AI is reshaping every aspect of healthcare delivery. Medical professionals are now able to leverage predictive analytics to identify high-risk patients before complications arise, while automated systems help reduce human error and increase efficiency in clinical workflows. The integration of AI-powered diagnostic tools has shown remarkable success in detecting conditions such as cancer, cardiovascular diseases, and neurological disorders with unprecedented accuracy. As this technology continues to evolve, it promises to make healthcare more accessible, affordable, and effective for patients worldwide.",
+    "category": { "id": 2, "slug": "business", "name": "Business" },
+    "source": { "id": 2, "slug": "reuters", "name": "Reuters" },
+    "author": { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" },
+    "publishedAt": "2024-12-27T10:30:00Z",
+    "imageUrl": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "url": "#"
+  },
+  "relatedArticles": [
+    {
+      "id": "7",
+      "title": "Machine Learning Algorithms Improve Medical Imaging Accuracy",
+      "description": "Latest AI developments enhance diagnostic precision in radiology departments worldwide.",
+      "content": "Recent advances in machine learning are revolutionizing medical imaging...",
+      "category": { "id": 2, "slug": "business", "name": "Business" },
+      "source": { "id": 2, "slug": "reuters", "name": "Reuters" },
+      "author": { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-26T15:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "8",
+      "title": "Tech Giants Invest Billions in Healthcare AI Research",
+      "description": "Major technology companies accelerate healthcare innovation investments.",
+      "content": "Leading technology companies are making unprecedented investments in healthcare AI...",
+      "category": { "id": 2, "slug": "business", "name": "Business" },
+      "source": { "id": 2, "slug": "reuters", "name": "Reuters" },
+      "author": { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-25T11:20:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    }
+  ]
+}

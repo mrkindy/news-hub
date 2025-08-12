@@ -1,0 +1,131 @@
+{
+  "success": true,
+  "articles": [
+    {
+      "id": "1",
+      "title": "Revolutionary AI Technology Transforms Healthcare Industry",
+      "description": "Groundbreaking artificial intelligence solutions are revolutionizing patient care and medical diagnosis.",
+      "content": "The healthcare industry is experiencing a profound transformation through the integration of artificial intelligence technologies. These cutting-edge solutions are enabling healthcare providers to deliver more accurate diagnoses, personalized treatment plans, and improved patient outcomes. From machine learning algorithms that can detect early signs of disease in medical imaging to natural language processing systems that streamline clinical documentation, AI is reshaping every aspect of healthcare delivery. Medical professionals are now able to leverage predictive analytics to identify high-risk patients before complications arise, while automated systems help reduce human error and increase efficiency in clinical workflows. The integration of AI-powered diagnostic tools has shown remarkable success in detecting conditions such as cancer, cardiovascular diseases, and neurological disorders with unprecedented accuracy. As this technology continues to evolve, it promises to make healthcare more accessible, affordable, and effective for patients worldwide.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T10:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "2",
+      "title": "Global Markets Rally Amid Economic Recovery Signs",
+      "description": "Stock markets worldwide show positive momentum as economic indicators point toward recovery.",
+      "content": "Global financial markets are experiencing significant gains as investors respond positively to emerging economic recovery signals. Major stock indices across continents have posted substantial increases, driven by improving employment figures, rising consumer confidence, and robust corporate earnings reports. The rally reflects growing optimism about economic resilience and the effectiveness of monetary and fiscal policies implemented during recent challenging periods. Analysts point to several key factors contributing to this positive trend, including increased consumer spending, supply chain improvements, and technological innovation driving productivity gains. The service sector has shown particular strength, while manufacturing indicators suggest sustained growth momentum. International trade volumes have also recovered, supporting global economic integration and cross-border investment flows. Central banks worldwide are carefully monitoring these developments, balancing growth support with inflation management strategies to ensure sustainable economic expansion.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T09:15:00Z",
+      "imageUrl": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "title": "Climate Summit Reaches Historic Agreement on Emissions",
+      "description": "World leaders unite to establish comprehensive climate action framework.",
+      "content": "In a landmark decision at the global climate summit, world leaders have reached a historic agreement on carbon emissions reduction that sets ambitious targets for the coming decades. The comprehensive framework addresses multiple aspects of climate action, including renewable energy transition, carbon pricing mechanisms, and international cooperation on green technology development. The agreement establishes binding commitments for participating nations to achieve net-zero emissions by 2050, with intermediate targets to ensure steady progress. Key provisions include substantial investments in clean energy infrastructure, support for developing countries in their transition to sustainable energy systems, and creation of a global carbon market to incentivize emissions reductions. The accord also emphasizes the importance of nature-based solutions, such as forest conservation and restoration, in achieving climate goals. Environmental scientists and policy experts have praised the agreement as a crucial step forward in addressing the climate crisis, though they emphasize that implementation will be critical to its success.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T08:45:00Z",
+      "imageUrl": "https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "4",
+      "title": "Championship Victory Sparks Celebration Across the City",
+      "description": "Local team wins national championship in thrilling overtime match.",
+      "content": "The city erupted in celebration last night as the local team secured a dramatic championship victory in overtime, capping off an incredible season that will be remembered for years to come. The thrilling match saw both teams display exceptional skill and determination, with momentum shifting multiple times throughout regulation play. Thousands of fans packed the stadium, creating an electric atmosphere that seemed to energize the players during crucial moments. The winning goal came in the final minutes of overtime, sending supporters into wild celebration both in the venue and across the city. Team captain Maria Rodriguez, who scored the decisive goal, credited the victory to months of intense training and unwavering team unity. Head coach James Thompson praised his players' resilience and strategic execution under pressure. The championship marks the team's first national title in over a decade, representing the culmination of a multi-year rebuilding effort. City officials announced plans for a victory parade next week to honor the team's historic achievement.",
+      "category": { "id": "3", "slug": "sports", "name": "Sports" },
+      "source": { "id": "3", "slug": "espn", "name": "ESPN" },
+      "author": {
+        "id": "2",
+        "slug": "maria-rodriguez",
+        "name": "Maria Rodriguez"
+      },
+      "publishedAt": "2024-12-26T22:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "5",
+      "title": "Breakthrough Gene Therapy Shows Promise for Rare Diseases",
+      "description": "New gene therapy treatment demonstrates remarkable success in clinical trials.",
+      "content": "A revolutionary gene therapy approach has shown unprecedented success in treating rare genetic diseases, offering new hope to patients and families who previously had limited treatment options. The innovative treatment method involves introducing healthy copies of genes into patients' cells to correct genetic defects that cause these debilitating conditions. Clinical trial results have demonstrated significant improvements in patient outcomes, with many participants showing substantial recovery of lost functions. The therapy targets the root cause of genetic diseases rather than merely managing symptoms, representing a fundamental shift in treatment philosophy. Researchers have successfully treated patients with various rare conditions, including certain forms of inherited blindness, immune system disorders, and metabolic diseases. The treatment protocol involves a single administration that can provide long-lasting benefits, potentially eliminating the need for ongoing medication regimens. Medical ethicists and regulatory agencies are working closely with researchers to establish appropriate guidelines for this groundbreaking treatment approach, ensuring both efficacy and safety standards are met.",
+      "category": { "id": "4", "slug": "health", "name": "Health" },
+      "source": {
+        "id": "4",
+        "slug": "medical-news",
+        "name": "Medical News Today"
+      },
+      "author": {
+        "id": "3",
+        "slug": "dr-emily-chen",
+        "name": "Dr. Emily Chen"
+      },
+      "publishedAt": "2024-12-26T16:20:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3938023/pexels-photo-3938023.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "6",
+      "title": "Mars Rover Discovers Evidence of Ancient Water Systems",
+      "description": "Latest findings from Mars exploration reveal complex water networks from billions of years ago.",
+      "content": "The Mars rover has made a groundbreaking discovery, uncovering evidence of sophisticated water systems that existed on the Red Planet billions of years ago. Advanced geological analysis reveals extensive networks of ancient riverbeds, lake formations, and possible underground water reservoirs that once supported a much more habitable environment. High-resolution imaging and spectroscopic analysis have identified mineral deposits that could only have formed in the presence of liquid water over extended periods. The discovery includes evidence of seasonal water flow patterns and complex drainage systems that suggest Mars once had a stable water cycle similar to Earth's. Scientists are particularly excited about finding clay minerals and other geological formations that indicate long-term water-rock interactions, which are essential for potential biological processes. The rover's instruments have also detected organic compounds in sediment samples, though researchers emphasize that these could have non-biological origins. This discovery significantly advances our understanding of Mars' climatic history and its potential to have supported life, influencing future mission planning and the search for extraterrestrial life.",
+      "category": { "id": "5", "slug": "science", "name": "Science" },
+      "source": { "id": "5", "slug": "nasa-news", "name": "NASA News" },
+      "author": {
+        "id": "4",
+        "slug": "james-thompson",
+        "name": "James Thompson"
+      },
+      "publishedAt": "2024-12-26T14:10:00Z",
+      "imageUrl": "https://images.pexels.com/photos/2156/sky-earth-space-working.jpg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    }
+  ],
+
+  "first_page_url": "http://localhost:5173/api/news.json?page=1",
+  "from": 1,
+  "last_page": 5,
+  "last_page_url": "http://localhost:5173/api/news.json?page=5",
+  "links": [
+    {
+      "url": null,
+      "label": "&laquo; Previous",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news.json?page=1",
+      "label": "1",
+      "active": true
+    },
+    {
+      "url": "http://localhost:5173/api/news.json?page=2",
+      "label": "2",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news.json?page=3",
+      "label": "3",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news.json?page=2",
+      "label": "Next &raquo;",
+      "active": false
+    }
+  ],
+  "next_page_url": "http://localhost:5173/api/news.json?page=2",
+  "path": "http://localhost:5173/api/news.json",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 15,
+  "total": 67
+}

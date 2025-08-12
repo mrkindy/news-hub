@@ -1,0 +1,107 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "1",
+      "title": "Revolutionary AI Technology Transforms Healthcare Industry",
+      "description": "Groundbreaking artificial intelligence solutions are revolutionizing patient care and medical diagnosis.",
+      "content": "The healthcare industry is experiencing a profound transformation through the integration of artificial intelligence technologies. These cutting-edge solutions are enabling healthcare providers to deliver more accurate diagnoses, personalized treatment plans, and improved patient outcomes.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T10:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "2",
+      "title": "Global Markets Rally Amid Economic Recovery Signs",
+      "description": "Stock markets worldwide show positive momentum as economic indicators point toward recovery.",
+      "content": "Global financial markets are experiencing significant gains as investors respond positively to emerging economic recovery signals. Major stock indices across continents have posted substantial increases.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T09:15:00Z",
+      "imageUrl": "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "title": "Climate Summit Reaches Historic Agreement on Emissions",
+      "description": "World leaders unite to establish comprehensive climate action framework.",
+      "content": "In a landmark decision at the global climate summit, world leaders have reached a historic agreement on carbon emissions reduction that sets ambitious targets for the coming decades.",
+      "category": { "id": "2", "slug": "business", "name": "Business" },
+      "source": { "id": "2", "slug": "reuters", "name": "Reuters" },
+      "author": { "id": "1", "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T08:45:00Z",
+      "imageUrl": "https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "4",
+      "title": "Championship Victory Sparks Celebration Across the City",
+      "description": "Local team wins national championship in thrilling overtime match.",
+      "content": "The city erupted in celebration last night as the local team secured a dramatic championship victory in overtime, capping off an incredible season.",
+      "category": { "id": "3", "slug": "sports", "name": "Sports" },
+      "source": { "id": "3", "slug": "espn", "name": "ESPN" },
+      "author": {
+        "id": "2",
+        "slug": "mike-rodriguez",
+        "name": "Mike Rodriguez"
+      },
+      "publishedAt": "2024-12-26T22:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/1884574/pexels-photo-1884574.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "5",
+      "title": "Breakthrough in Renewable Energy Storage Announced",
+      "description": "New battery technology promises to revolutionize clean energy storage capabilities.",
+      "content": "Scientists have announced a major breakthrough in renewable energy storage technology that could significantly improve the efficiency and cost-effectiveness of solar and wind energy systems.",
+      "category": { "id": "1", "slug": "technology", "name": "Technology" },
+      "source": { "id": "1", "slug": "techcrunch", "name": "TechCrunch" },
+      "author": { "id": "3", "slug": "emily-chen", "name": "Emily Chen" },
+      "publishedAt": "2024-12-26T16:45:00Z",
+      "imageUrl": "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    }
+  ],
+
+  "first_page_url": "http://localhost:5173/api/news-paginated.json?page=1",
+  "from": 1,
+  "last_page": 5,
+  "last_page_url": "http://localhost:5173/api/news-paginated.json?page=5",
+  "links": [
+    {
+      "url": null,
+      "label": "&laquo; Previous",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news-paginated.json?page=1",
+      "label": "1",
+      "active": true
+    },
+    {
+      "url": "http://localhost:5173/api/news-paginated.json?page=2",
+      "label": "2",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news-paginated.json?page=3",
+      "label": "3",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/news-paginated.json?page=2",
+      "label": "Next &raquo;",
+      "active": false
+    }
+  ],
+  "next_page_url": "http://localhost:5173/api/news-paginated.json?page=2",
+  "path": "http://localhost:5173/api/news-paginated.json",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 15,
+  "total": 67
+}

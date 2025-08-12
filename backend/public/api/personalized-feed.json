@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": "1",
+      "title": "Revolutionary AI Technology Transforms Healthcare Industry",
+      "description": "Groundbreaking artificial intelligence solutions are revolutionizing patient care and medical diagnosis.",
+      "content": "The healthcare industry is experiencing a profound transformation through the integration of artificial intelligence technologies.",
+      "category": { "id": 2, "slug": "business", "name": "Business" },
+      "source": { "id": 2, "slug": "reuters", "name": "Reuters" },
+      "author": { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T10:30:00Z",
+      "imageUrl": "https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    },
+    {
+      "id": "3",
+      "title": "Climate Summit Reaches Historic Agreement on Emissions",
+      "description": "World leaders unite to establish comprehensive climate action framework.",
+      "content": "In a landmark decision at the global climate summit, world leaders have reached a historic agreement on carbon emissions reduction.",
+      "category": { "id": 2, "slug": "business", "name": "Business" },
+      "source": { "id": 2, "slug": "reuters", "name": "Reuters" },
+      "author": { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" },
+      "publishedAt": "2024-12-27T08:45:00Z",
+      "imageUrl": "https://images.pexels.com/photos/2990650/pexels-photo-2990650.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "url": "#"
+    }
+  ],
+
+  "first_page_url": "http://localhost:5173/api/personalized-feed.json?page=1",
+  "from": 1,
+  "last_page": 5,
+  "last_page_url": "http://localhost:5173/api/personalized-feed.json?page=5",
+  "links": [
+    {
+      "url": null,
+      "label": "&laquo; Previous",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/personalized-feed.json?page=1",
+      "label": "1",
+      "active": true
+    },
+    {
+      "url": "http://localhost:5173/api/personalized-feed.json?page=2",
+      "label": "2",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/personalized-feed.json?page=3",
+      "label": "3",
+      "active": false
+    },
+    {
+      "url": "http://localhost:5173/api/personalized-feed.json?page=2",
+      "label": "Next &raquo;",
+      "active": false
+    }
+  ],
+  "next_page_url": "http://localhost:5173/api/personalized-feed.json?page=2",
+  "path": "http://localhost:5173/api/personalized-feed.json",
+  "per_page": 15,
+  "prev_page_url": null,
+  "to": 15,
+  "total": 67,
+  "preferences": {
+    "categories": [{ "id": 2, "slug": "business", "name": "Business" }],
+    "sources": [{ "id": 2, "slug": "reuters", "name": "Reuters" }],
+    "authors": [{ "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" }]
+  }
+}

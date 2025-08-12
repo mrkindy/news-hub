@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "user": {
+    "id": "user_123",
+    "email": "demo@example.com",
+    "first_name": "Demo",
+    "last_name": "User",
+    "preferences": {
+      "categories": ["Technology", "Business"],
+      "sources": ["TechCrunch", "Reuters"],
+      "authors": ["Sarah Johnson"],
+      "language": "en",
+      "theme": "light"
+    },
+    "createdAt": "2024-12-27T10:00:00Z",
+    "token": "user_token_123"
+  }
+}

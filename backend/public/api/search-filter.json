@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "data": [
+    { "id": "technology-advanced", "name": "Advanced Technology", "slug": "technology-advanced", "count": 23 },
+    { "id": "tech-news", "name": "Tech News", "slug": "tech-news", "count": 45 },
+    { "id": "artificial-intelligence", "name": "Artificial Intelligence", "slug": "artificial-intelligence", "count": 67 },
+    { "id": "machine-learning", "name": "Machine Learning", "slug": "machine-learning", "count": 34 },
+    { "id": "blockchain", "name": "Blockchain", "slug": "blockchain", "count": 29 }
+  ]
+}

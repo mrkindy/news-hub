@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "preferences": {
+      "categories": [
+        { "id": 1, "slug": "technology", "name": "Technology" },
+        { "id": 2, "slug": "business", "name": "Business" }
+      ],
+      "sources": [
+        { "id": 1, "slug": "techcrunch", "name": "TechCrunch" },
+        { "id": 2, "slug": "reuters", "name": "Reuters" }
+      ],
+      "authors": [
+        { "id": 1, "slug": "sarah-johnson", "name": "Sarah Johnson" }
+      ],
+    "language": "en",
+    "theme": "light"
+  }
+}
