@@ -1,0 +1,73 @@
+services:
+  # React Frontend (Production-ready)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: newshub_frontend
+    ports:
+      - "3000:80"   # React build served by Nginx inside container
+    depends_on:
+      - backend
+
+  # Laravel Backend (with Nginx inside)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: newshub_backend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend:/var/www/html
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=newshub
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - mysql
+      - redis
+
+  # Migration Service (runs once then exits)
+  migrate:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: newshub_migrate
+    command: >
+      sh -c "mysql -hmysql -uroot -proot -e 'CREATE DATABASE IF NOT EXISTS newshub;' && php artisan migrate --force"
+    depends_on:
+      - backend
+      - mysql
+    restart: "no"
+
+  # MySQL Database
+  mysql:
+    image: mysql:8
+    container_name: newshub_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: newshub
+      MYSQL_USER: newshub
+      MYSQL_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Redis
+  redis:
+    image: redis:alpine
+    container_name: newshub_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+volumes:
+  mysql_data:
