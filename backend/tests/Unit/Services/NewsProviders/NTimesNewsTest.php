@@ -40,7 +40,7 @@ final class NTimesNewsTest extends TestCase
                         'section_name' => 'World',
                         'multimedia' => [
                             [
-                                'url' => 'images/2024/01/01/test-image.jpg',
+                                'url' => 'https://www.nytimes.com/images/2024/01/01/test-image.jpg',
                                 'type' => 'image',
                             ],
                         ],

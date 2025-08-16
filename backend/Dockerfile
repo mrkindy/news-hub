@@ -13,6 +13,7 @@ ENV COMPOSER_ALLOW_SUPERUSER=1 \
 # ===== Dependency Setup =====
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git unzip curl ca-certificates gnupg lsb-release nano \
+    netcat-openbsd \
     supervisor nginx redis-server \
     libzip-dev libicu-dev zlib1g-dev libpq-dev \
     libpng-dev libjpeg62-turbo-dev libfreetype6-dev \
@@ -24,12 +25,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   && docker-php-ext-enable redis \
   && rm -rf /var/lib/apt/lists/*
 
-
 # ===== Composer =====
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
-
-RUN mkdir -p /home/$APACHE_RUN_USER/.composer && \
-    chown -R $APACHE_RUN_USER:$APACHE_RUN_GROUP /home/$APACHE_RUN_USER
 
 # ===== Copy Files =====
 WORKDIR /var/www/html
@@ -38,15 +35,12 @@ COPY . /var/www/html
 # ===== Install Composer dependencies =====
 RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
 
-
-# ===== add key and clear Laravel cache =====
-RUN su -s /bin/bash $APACHE_RUN_USER -c "php artisan key:generate --force" || true \
- && su -s /bin/bash $APACHE_RUN_USER -c "php artisan config:clear" || true \
- && su -s /bin/bash $APACHE_RUN_USER -c "php artisan route:clear" || true \
- && su -s /bin/bash $APACHE_RUN_USER -c "php artisan view:clear" || true
+# ===== Set proper ownership and permissions =====
+RUN chmod -Rf ug+rwx storage bootstrap/cache
+RUN chown -Rf $APACHE_RUN_USER:www-data storage bootstrap/cache
 
 # ===== Remove default Nginx configuration =====
-RUN rm -f /etc/nginx/sites-enabled/default /etc/nginx/conf.d/default.conf || true
+RUN rm -f /etc/nginx/sites-enabled/default /etc/nginx/conf.d/default.conf
 
 # ===== Copy Nginx Configuration =====
 COPY docker/nginx/laravel.conf /etc/nginx/conf.d/laravel.conf
@@ -55,18 +49,16 @@ COPY docker/nginx/laravel.conf /etc/nginx/conf.d/laravel.conf
 RUN mkdir -p /var/log/supervisor
 COPY docker/supervisor/services.conf /etc/supervisor/conf.d/services.conf
 
+# ===== Copy entrypoint script =====
+COPY docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# ===== add key and clear Laravel cache =====
+RUN php artisan key:generate --force
+
 # ===== optimize Laravel =====
-RUN su -s /bin/bash $APACHE_RUN_USER -c "php artisan optimize"
-
-# ===== Final permission fix =====
-RUN su -s /bin/bash $APACHE_RUN_USER -c "chmod -R 777 storage bootstrap/cache"
-RUN su -s /bin/bash $APACHE_RUN_USER -c "chown -R $APACHE_RUN_USER:www-data storage bootstrap/cache"
-
-# ===== Healthcheck =====
-HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=5 \
-  CMD curl -fsS http://localhost/ || exit 1
+RUN php artisan optimize
 
 EXPOSE 80
 
-# ===== Entrypoint =====
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+ENTRYPOINT ["/entrypoint.sh"]

@@ -9,6 +9,9 @@ services:
       - "3000:80"   # React build served by Nginx inside container
     depends_on:
       - backend
+    networks:
+      - news-hub-network
+
 
   # Laravel Backend (with Nginx inside)
   backend:
@@ -32,19 +35,8 @@ services:
     depends_on:
       - mysql
       - redis
-
-  # Migration Service (runs once then exits)
-  migrate:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: newshub_migrate
-    command: >
-      sh -c "mysql -hmysql -uroot -proot -e 'CREATE DATABASE IF NOT EXISTS newshub;' && php artisan migrate --force"
-    depends_on:
-      - backend
-      - mysql
-    restart: "no"
+    networks:
+      - news-hub-network
 
   # MySQL Database
   mysql:
@@ -57,10 +49,13 @@ services:
       MYSQL_USER: newshub
       MYSQL_PASSWORD: root
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
-      - mysql_data:/var/lib/mysql
-
+      - newshub_mysql:/var/lib/mysql
+      - ./backend/docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - news-hub-network
+      
   # Redis
   redis:
     image: redis:alpine
@@ -68,6 +63,12 @@ services:
     restart: unless-stopped
     ports:
       - "6379:6379"
+    networks:
+      - news-hub-network
 
 volumes:
-  mysql_data:
+  newshub_mysql:
+
+networks:
+  news-hub-network:
+    driver: bridge

@@ -105,8 +105,8 @@ final class NTimesNews implements NewsSourceInterface
     private function extractImageUrl(array $multimedia): ?string
     {
         foreach ($multimedia as $media) {
-            if (isset($media['url']) && $media['type'] === 'image') {
-                return 'https://www.nytimes.com/'.$media['url'];
+            if (isset($media['url'])) {
+                return $media['url'];
             }
         }
 

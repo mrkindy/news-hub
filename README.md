@@ -40,7 +40,9 @@ innoscripta/
 **For more details**: [Frontend README](frontend/README.md)
 
 ## 🐳 Running with Docker
+No installation steps are required, such as creating the database or running migrations.
 
+Simply add the secret keys for the news provider services in the [backend/.env](backend/.env).
 ```bash
 # Run the complete system
 docker-compose up -d
@@ -48,7 +50,7 @@ docker-compose up -d
 # Access applications
 # Frontend: http://localhost:3000
 # Backend API: http://localhost:8000
-# MySQL: localhost:3307
+# MySQL: localhost:3306
 ```
 
 ## 📚 Detailed Documentation

@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schedule;
 
 
 // schedule NewsFetchService command to run every 5 minutes
-Schedule::command('fetch:news')
+Schedule::command('news:fetch')
     ->everyFiveMinutes()
     ->onSuccess(function () {
         Log::info('News fetch command executed successfully');

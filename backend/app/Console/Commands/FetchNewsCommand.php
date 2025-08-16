@@ -7,6 +7,7 @@ namespace App\Console\Commands;
 use App\Services\NewsFetchService;
 use Exception;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 
 final class FetchNewsCommand extends Command
@@ -49,6 +50,7 @@ final class FetchNewsCommand extends Command
 
             $this->displayResults($results);
             $this->displaySummary($results, $startTime);
+            $this->flushCache();
 
             return Command::SUCCESS;
         } catch (Exception $e) {
@@ -109,5 +111,12 @@ final class FetchNewsCommand extends Command
             $this->newLine();
             $this->warn('⚠️ No new articles were saved.');
         }
+    }
+
+    private function flushCache(): void
+    {
+        $this->info('Flushing cache...');
+        Cache::flush();
+        $this->info('Cache cleared successfully.');
     }
 }
