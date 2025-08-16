@@ -77,7 +77,7 @@ docker-compose up -d
 - 📱 **Responsive Design** works on all devices
 - 🌍 **Multi-language Support** (English/German)
 - ⚡ **High Performance** with intelligent caching
-- 📊 **Admin Dashboard** for content and user management
+- 📊 **User Dashboard** for users
 
 ## 🛠️ System Requirements
 
