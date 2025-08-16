@@ -38,10 +38,6 @@ COPY . /var/www/html
 # ===== Install Composer dependencies =====
 RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader --no-scripts
 
-# ===== Set proper ownership and permissions =====
-RUN chown -R $APACHE_RUN_USER:$APACHE_RUN_GROUP /var/www/html \
- && chmod -R 755 /var/www/html \
- && chmod -R 777 storage bootstrap/cache \
 
 # ===== add key and clear Laravel cache =====
 RUN su -s /bin/bash $APACHE_RUN_USER -c "php artisan key:generate --force" || true \
@@ -63,10 +59,8 @@ COPY docker/supervisor/services.conf /etc/supervisor/conf.d/services.conf
 RUN su -s /bin/bash $APACHE_RUN_USER -c "php artisan optimize"
 
 # ===== Final permission fix =====
-RUN mkdir -p storage/framework/views storage/framework/cache storage/framework/sessions storage/logs \
- && chmod -R 775 storage bootstrap/cache \
- && chown -R $APACHE_RUN_USER:www-data storage bootstrap/cache \
- && chmod -R 777 storage/framework storage/logs
+RUN su -s /bin/bash $APACHE_RUN_USER -c "chmod -R 777 storage bootstrap/cache"
+RUN su -s /bin/bash $APACHE_RUN_USER -c "chown -R $APACHE_RUN_USER:www-data storage bootstrap/cache"
 
 # ===== Healthcheck =====
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=5 \
